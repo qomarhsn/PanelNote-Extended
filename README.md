@@ -1,4 +1,4 @@
-<h1 align="center">Panel Note</h1>
+<h1 align="center">PanelNote Extended</h1>
 
 <h3 align="center">A simple note for your GNOME Shell panel</h3>
 
