@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+
+  <schema id="org.gnome.shell.extensions.panelnote-extended" path="/org/gnome/shell/extensions/panelnote-extended/">
+
+    <key type="s" name="note">
+      <default>"Click to edit your note"</default>
+      <summary>The note displayed on the panel when no scheduled note is active</summary>
+    </key>
+
+    <key name="enable-positioning" type="b">
+      <default>false</default>
+      <summary>Enable custom panel positioning</summary>
+    </key>
+
+    <key type="i" name="position">
+      <default>2</default>
+      <summary>Panel area (0=left, 1=center, 2=right)</summary>
+    </key>
+
+    <key type="i" name="position-number">
+      <default>0</default>
+      <summary>Index within the selected panel area</summary>
+    </key>
+
+    <key type="a(siiii)" name="time-notes">
+      <default>[]</default>
+      <summary>Scheduled notes</summary>
+      <description>Array of (note_text, start_hour, start_minute, end_hour, end_minute)</description>
+    </key>
+  </schema>
+</schemalist>

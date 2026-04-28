@@ -1,8 +1,8 @@
 {
   "uuid": "panelnote-extended@qomarhsn.com",
   "name": "PanelNote Extended",
-  "description": "Add a small note to your GNOME panel. This fork supports custom positioning, precise index control, and extends compatibility to GNOME 49.",
-  "settings-schema": "org.gnome.shell.extensions.panelnote",
-  "shell-version": ["45", "46", "47", "48", "49"],
+  "description": "Add a small note to your GNOME panel. Supports time-based notes that change automatically throughout the day, custom positioning, and precise index control. Compatible with GNOME 45–50.",
+  "settings-schema": "org.gnome.shell.extensions.panelnote-extended",
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
   "url": "https://github.com/qomarhsn/PanelNote"
 }
