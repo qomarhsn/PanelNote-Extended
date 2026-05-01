@@ -98,7 +98,7 @@ const Indicator = GObject.registerClass(
                 this._refreshNote();
             });
 
-            this.menu.connect('open-state-changed', (_menu, open) => {
+            this._menuOpenStateChangedId = this.menu.connect('open-state-changed', (_menu, open) => {
                 if (open) {
                     let active = getActiveNote(settings);
                     this._activeTimeNoteIndex = active.timeNoteIndex;
@@ -174,6 +174,10 @@ const Indicator = GObject.registerClass(
             if (this._textChangedSignal) {
                 this.entry.clutter_text.disconnect(this._textChangedSignal);
                 this._textChangedSignal = null;
+            }
+            if (this._menuOpenStateChangedId) {
+                this.menu.disconnect(this._menuOpenStateChangedId);
+                this._menuOpenStateChangedId = null;
             }
             super.destroy();
         }
