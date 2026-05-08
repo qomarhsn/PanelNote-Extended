@@ -109,10 +109,10 @@ const Indicator = GObject.registerClass(
             });
 
             let popupEdit = new PopupMenu.PopupMenuSection();
-            popupEdit.add_child(this.entry);
+            popupEdit.actor.add_child(this.entry);
 
             this.menu.addMenuItem(popupEdit);
-            this.menu.add_style_class_name('note-entry');
+            this.menu.actor.add_style_class_name('note-entry');
 
             /* --------------------------- Right-click → Settings --------------------------- */
             // Disable the default ClickGesture so it doesn't consume click events
